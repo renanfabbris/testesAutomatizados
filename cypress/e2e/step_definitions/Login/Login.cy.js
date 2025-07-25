@@ -23,5 +23,5 @@ And("clica no botão de login", () => {
 })
 
 Then("é redirecionado para a página inicial", () => {
-    cy.xpath("//img[@alt='Website for automation practice']").should('be.visible')
+    cy.xpath("//a[@href='/logout']").should('be.visible')
 });

@@ -94,5 +94,5 @@ And("o usuário clica no botão Continuar", () => {
 })
 
 And("o usuário é redirecionado para a página inicial", () => {
-    cy.xpath("//img[@alt='Website for automation practice']").should('be.visible')
+    cy.xpath("//a[@href='/logout']").should('be.visible')
 });
