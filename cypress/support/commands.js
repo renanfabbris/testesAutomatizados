@@ -36,4 +36,4 @@ Cypress.Commands.add('fazerLogin', () => {
     cy.xpath("//input[@data-qa='login-email']").clear().type(email)
     cy.xpath("//input[@data-qa='login-password']").clear().type(senha)
     cy.xpath("//button[@data-qa='login-button']").click()
-    cy.xpath("//img[@alt='Website for automation practice']").should('be.visible') });
+    cy.xpath("//a[@href='/logout']").should('be.visible') });
