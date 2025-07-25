@@ -23,18 +23,21 @@ Este projeto automatiza testes end-to-end e de API utilizando Cypress com integr
 1. Clone este repositório:
    ```bash
    git clone https://github.com/renanfabbris/testesAutomatizados
-   cd 
+   cd testesAutomatizados/
    ```
 2. Instalar no terminal:
    ```bash
    npm install
    ```
-3. Executar o projeto:
+3. Variáveis de ambiente:
+   Configurar as variáveis de ambiente no arquivo (.env)
+
+4. Executar o projeto:
    ```bash
    npm start
    ```
-3. Selecionar o navegador:
+5. Selecionar o navegador:
    Selecionar o navegador a ser utilizado e clicar em "Start E2E Testing in (navegador)"
 
-3. Selecionar a feature:
+6. Selecionar a feature:
    Selecionar a feature desejada e o teste será executado.
