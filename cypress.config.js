@@ -11,11 +11,7 @@ module.exports = defineConfig({
     
   },
   env: {
-    email: process.env.EMAIL,
-    senha: process.env.SENHA,
     url: process.env.URL,
-    url_api: process.env.URL_API,
-    email_cadastro: process.env.EMAIL_CADASTRO,
-    senha_cadastro: process.env.SENHA_CADASTRO
+    url_api: process.env.URL_API
   },
 });
