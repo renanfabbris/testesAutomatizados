@@ -1,0 +1,25 @@
+{
+  "dadosPessoais":{
+  "nome": "QA Teste",
+  "email": "",
+  "titulo": "Mr",
+  "senha": "",
+  "diaNascimento": "1",
+  "mesNascimento": "January",
+  "anoNascimento": "1999",
+  "primeiroNome": "Nome QA",
+  "ultimoNome": "Teste 01",
+  "empresa": "Empresa Teste",
+  "endereco": "Robson Street, 1BC",
+  "pais": "Canada",
+  "provincia": "British Columbia",
+  "cidade": "Vancouver",
+  "codigoPostal": "V6B 1T5",
+  "numeroCelular": "+1 (437) 812-3946"
+  },
+
+  "login":{
+    "email": "",
+    "senha": ""
+  }
+}

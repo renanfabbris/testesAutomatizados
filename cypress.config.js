@@ -1,13 +1,14 @@
-const cucumber = require('cypress-cucumber-preprocessor').default
 const { defineConfig } = require("cypress");
+const cucumber = require('cypress-cucumber-preprocessor').default
 require('dotenv').config();
 module.exports = defineConfig({
   e2e: {
+    specPattern: "cypress/e2e/features/**/*.feature",
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber())
       return config;
     },
-    specPattern: "cypress/e2e/step_definitions/**/*.feature"
+    
   },
   env: {
     email: process.env.EMAIL,

@@ -22,18 +22,4 @@
 //
 //
 // -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.Commands.add('fazerLogin', () => {
-    const email = Cypress.env('email');
-    const senha = Cypress.env('senha');
-    const url = Cypress.env('url');
-    if (!email || !senha) {
-        throw new Error('EMAIL ou SENHA não estão definidas nas variáveis de ambiente (.env)');
-      }
-    cy.clearCookies();
-    cy.clearLocalStorage();
-    cy.visit(url)
-    cy.xpath("//input[@data-qa='login-email']").clear().type(email)
-    cy.xpath("//input[@data-qa='login-password']").clear().type(senha)
-    cy.xpath("//button[@data-qa='login-button']").click()
-    cy.xpath("//a[@href='/logout']").should('be.visible') });
+//Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })

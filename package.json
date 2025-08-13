@@ -10,13 +10,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.5.2",
+    "cypress": "^14.5.4",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-xpath": "^2.0.1",
     "dotenv": "^17.2.1"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
-    "stepDefinitions": "cypress/e2e/step_definitions"
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/steps"
   }
 }
